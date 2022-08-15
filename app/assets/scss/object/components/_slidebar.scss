@@ -191,23 +191,10 @@ $slidebar-container-bg: rgba(0, 0, 0, 0.8) !default;
 
 
     &__button {
-      margin-top: rem-calc(32);
+      display: block;
+      margin: rem-calc(32) auto 0;
       max-width: 100%;
-      background-color: $color-white;
-      color: $color-primary;
-      font-size: rem-calc(16);
-
-      &::before {
-        content: "\f0e0";
-        font-family: "FontAwesome";
-        color: $color-primary;
-        font-size: rem-calc(18);
-        margin-right: rem-calc(12);
-      }
-
-      &::after {
-        content: none;
-      }
+      width: rem-calc(280);
     }
 
     &__sns-btns {

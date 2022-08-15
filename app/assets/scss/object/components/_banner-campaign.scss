@@ -1,4 +1,6 @@
 .c-banner-campaign {
+  position: relative;
+  z-index: 1;
 
   &__image {
     width: 100%;

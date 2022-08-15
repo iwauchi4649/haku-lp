@@ -1,4 +1,26 @@
 .c-block-point {
+  overflow: hidden;
+
+  &__float {
+    position: absolute;
+    bottom: 0;
+    right: calc(130/1400*100%);
+    color: $color-white;
+    @include webfont-apple();
+    @include font-format(104,0,104,400);
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    transform: rotate(180deg);
+
+    @include breakpoint(medium down) {
+      right: rem-calc(48);
+      font-size: rem-calc(80);
+    }
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(60);
+    }
+  }
 
   &__inner {
     position: relative;

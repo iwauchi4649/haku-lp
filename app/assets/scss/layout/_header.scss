@@ -24,6 +24,10 @@ category: Layout
     height: rem-calc(148);
     padding: 0 rem-calc(30);
 
+    @include breakpoint(1250 down) {
+      padding: 0 rem-calc(16);
+    }
+
     @include breakpoint(medium down) {
       height: rem-calc(55);
     }
@@ -35,8 +39,16 @@ category: Layout
     flex-shrink: 0;
     margin-right: rem-calc(56);
 
-    @include breakpoint(medium down) {
+    @include breakpoint(1380 down) {
+      margin-right: rem-calc(28);
+    }
+
+    @include breakpoint(1150 down) {
       width: 170px;
+    }
+
+    @include breakpoint(medium down) {
+      width: 150px;
     }
 
     a,
@@ -60,6 +72,10 @@ category: Layout
       li {
         &:not(:last-child) {
           margin-right: rem-calc(32);
+
+          @include breakpoint(1380 down) {
+            margin-right: rem-calc(16);
+          }
         }
 
         a {
@@ -67,6 +83,10 @@ category: Layout
           color: $font-base-color;
           position: relative;
           @include transition();
+
+          @include breakpoint(1250 down) {
+            font-size: rem-calc(14);
+          }
         }
       }
     }
@@ -77,8 +97,19 @@ category: Layout
     max-width: rem-calc(280);
     margin-left: rem-calc(12);
     margin-bottom: rem-calc(30);
-    width: 296px;
     filter: drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.16));
+
+    @include breakpoint(1300 down) {
+      max-width: rem-calc(240);
+    }
+
+    @include breakpoint(1150 down) {
+      max-width: rem-calc(200);
+    }
+
+    @include breakpoint(1050 down) {
+      display: none;
+    }
   }
 }
 
