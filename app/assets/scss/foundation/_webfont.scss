@@ -4,3 +4,10 @@
   font-weight: $weight;
 }
 
+@mixin webfont-lato() {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin webfont-apple() {
+  font-family: 'Homemade Apple', cursive;
+}

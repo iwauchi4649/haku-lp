@@ -19,26 +19,50 @@ category: Heading
 
 // h1
 .c-heading.is-xlg {
-  color: $color-primary;
-  margin-bottom: rem-calc(24);
-  @include breakpoint(small only) {
+  text-align: center;
+  margin-bottom: rem-calc(80);
 
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(40);
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-primary;
+    @include font-format(14, .5, 21, 400);
+    margin-bottom: rem-calc(9);
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(13);
+      margin-bottom: rem-calc(6);
+    }
+
+    &:before {
+      content: "add";
+      font-family: "Material Icons Round";
+      line-height: 1;
+      letter-spacing: 0;
+      font-size: rem-calc(11);
+      margin-right: rem-calc(6);
+    }
+
+    &:after {
+      content: "add";
+      font-family: "Material Icons Round";
+      line-height: 1;
+      letter-spacing: 0;
+      font-size: rem-calc(11);
+    }
   }
 
   b {
     display: block;
-    @include webfont();
-    @include font-format(42, 0.1, 52, 700);
-    @include breakpoint(small only) {
-      font-size: rem-calc(42)*0.8;
-    }
-  }
+    @include font-format(28, 0.15, 43, 400);
 
-  span {
-    display: block;
-    @include font-format(16, .1, 26, 700);
     @include breakpoint(small only) {
-      font-size: rem-calc(16)*0.8;
+      font-size: rem-calc(20);
     }
   }
 }

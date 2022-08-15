@@ -1,0 +1,89 @@
+.c-block-point {
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+
+    @include breakpoint(small only) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &:not(:first-child) {
+      margin-top: rem-calc(64);
+
+      @include breakpoint(small only) {
+        margin-top: rem-calc(32);
+      }
+    }
+  }
+
+  &__number {
+    position: relative;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem-calc(120);
+    height: rem-calc(108);
+    background-image: url("../images/img-block-point.png");
+    @include bg-option();
+    margin-right: rem-calc(30);
+    color: $color-primary;
+    @include webfont-apple();
+
+    @include breakpoint(small only) {
+      width: rem-calc(100);
+      height: rem-calc(90);
+      margin-right: 0;
+      margin-bottom: rem-calc(24);
+    }
+
+    small {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(-17deg);
+      @include font-format(23,0,23,400);
+
+      @include breakpoint(small only) {
+        font-size: rem-calc(18);
+      }
+    }
+
+    span {
+      @include font-format(59,0,59,400);
+
+      @include breakpoint(small only) {
+        font-size: rem-calc(40);
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__title {
+    @include font-format(24,0.05,35,400);
+    padding-bottom: rem-calc(12);
+    border-bottom: 6px solid;
+    border-image: linear-gradient(to left,#7bb6cc 0%, #e1e5f0 100%) 1;
+    margin-bottom: rem-calc(16);
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(18);
+      border-bottom: 4px solid;
+    }
+
+    span {
+      color: $color-primary;
+      font-weight: 700;
+    }
+  }
+}
