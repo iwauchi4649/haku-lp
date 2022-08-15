@@ -1,0 +1,135 @@
+.c-card-after-before {
+  overflow: hidden;
+
+  &__head {
+
+  }
+
+  &__inner {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translateX(-50%) translateY(-50%);
+      width: rem-calc(1920);
+      height: rem-calc(1);
+      background: $border-base-color;
+
+      @include breakpoint(small only) {
+        top: 20%;
+      }
+    }
+
+    &:after {
+      @include breakpoint(small only) {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        right: -14%;
+        top: 50%;
+        transform: translateY(-50%) rotate(-35deg);
+        width: 100%;
+        height: rem-calc(1);
+        background: $border-base-color;
+      }
+
+      @include breakpoint(400 down) {
+        top: 47.5%;
+      }
+    }
+  }
+
+  &__blocks {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 rem-calc(-18);
+
+    @include breakpoint(small only) {
+      margin: 0 rem-calc(-12);
+    }
+
+    &:before {
+
+      @include breakpoint(small only) {
+        content: "";
+        position: absolute;
+        left: rem-calc(12);
+        bottom: 22%;
+        transform: translateY(50%);
+        width: calc(100% + 16px);
+        height: rem-calc(1);
+        background: $border-base-color;
+      }
+    }
+  }
+
+  &__block {
+    position: relative;
+    width: calc(25% - 36px);
+    margin: 0 rem-calc(18);
+
+    @include breakpoint(small only) {
+      width: calc(50% - 24px);
+      margin: 0 rem-calc(12);
+    }
+
+    &:nth-child(n + 3) {
+
+      @include breakpoint(small only) {
+        margin-top: rem-calc(56);
+      }
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem-calc(60);
+    height: rem-calc(60);
+    @include webfont-lato();
+    @include font-format(36,0,36,500);
+    color: $color-white;
+    background: $color-primary;
+    border-radius: 50%;
+
+    @include breakpoint(medium down) {
+      width: rem-calc(40);
+      height: rem-calc(40);
+      font-size: rem-calc(24);
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+    border-radius: rem-calc(20);
+  }
+
+  &__title {
+    text-align: center;
+    @include webfont-gothic();
+    @include font-format(20,0.05,29,500);
+    margin-top: rem-calc(20);
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(16);
+      margin-top: rem-calc(12);
+    }
+
+    span {
+      @include font-format(26,0.05,26,500);
+
+      @include breakpoint(small only) {
+        font-size: rem-calc(20);
+      }
+    }
+  }
+}

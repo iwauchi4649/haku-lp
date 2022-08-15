@@ -8,6 +8,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+@mixin webfont-gothic() {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
 @mixin webfont-apple() {
   font-family: 'Homemade Apple', cursive;
 }
