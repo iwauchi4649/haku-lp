@@ -13,6 +13,7 @@ category: Layout
   position: fixed;
   top: 0;
   left: 0;
+  @include transition();
 
   &.is-fixed {
     background: $color-white;

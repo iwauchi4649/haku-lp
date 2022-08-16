@@ -52,6 +52,7 @@
     padding: rem-calc(40) rem-calc(80);
     border-radius: 23px;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 
     @include breakpoint(medium down) {
       padding: rem-calc(40) rem-calc(60);

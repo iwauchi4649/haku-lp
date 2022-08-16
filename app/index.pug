@@ -173,11 +173,38 @@ block body
             span FAQ
             b よくあるご質問
           +e.blocks
-            +loop(5)
-              +e.block.js-accordion
-                +e.head(data-accordion-title="accordion-title")
-                  +e.icon Q
-                  +e.title 1回で白くなりますか？
-                +e.content(data-accordion-content="accordion-text")
-                  +e.icon A
-                  +e.text 1回でも白さアップを期待できますが、目標の白さに到達するまでは複数回通う必要のあるケースが多いです。
+            +e.block.js-accordion.is-open
+              +e.head(data-accordion-title="accordion-title")
+                +e.icon Q
+                +e.title 1回で白くなりますか？
+              +e.content(data-accordion-content="accordion--text", style="display: block;")
+                +e.icon.is-color-accent A
+                +e.text 1回でも白さアップを期待できますが、目標の白さに到達するまでは複数回通う必要のあるケースが多いです。
+            +e.block.js-accordion
+              +e.head(data-accordion-title="accordion-title")
+                +e.icon Q
+                +e.title 白くなったら通わなくてもいいですか？
+              +e.content(data-accordion-content="accordion--text")
+                +e.icon.is-color-accent A
+                +e.text 再石灰化の影響によって色戻りしてしまうため、白くなった後も定期的なメンテナンスをお勧めしています。1年目は2週間に1度程度のご利用を推奨しております。
+            +e.block.js-accordion
+              +e.head(data-accordion-title="accordion-title")
+                +e.icon Q
+                +e.title 食事制限はありますか？
+              +e.content(data-accordion-content="accordion--text")
+                +e.icon.is-color-accent A
+                +e.text 施術後30分のみ、色素沈着しやすくなっているためご飲食を避けていただいております。それ以降のお食事の制限はございません。
+            +e.block.js-accordion
+              +e.head(data-accordion-title="accordion-title")
+                +e.icon Q
+                +e.title 妊娠中・授乳中でも利用可能ですか？
+              +e.content(data-accordion-content="accordion--text")
+                +e.icon.is-color-accent A
+                +e.text 妊娠中はお控えいただいております。授乳中は特に問題ありません。
+            +e.block.js-accordion
+              +e.head(data-accordion-title="accordion-title")
+                +e.icon Q
+                +e.title どのくらいの頻度で行うのが理想ですか？
+              +e.content(data-accordion-content="accordion--text")
+                +e.icon.is-color-accent A
+                +e.text 目標の白さになるまでは週1, 2回程度。以降は白さを維持するため月2回程度通っていただくことを推奨しております。
