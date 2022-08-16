@@ -103,9 +103,10 @@
         <div class="c-main-visual__inner"><a class="c-main-visual__button" href="https://line.me/R/ti/p/@060jzuih?oat__id=931679" target="_blank"><img class="u-hidden-sm" src="<?php echo get_template_directory_uri()?>/assets/images/img-main-visual-button.png" alt=""/><img class="u-visible-sm" src="<?php echo get_template_directory_uri()?>/assets/images/img-main-visual-button-sp.png" alt=""/></a>
         </div>
         <div class="c-main-visual__text"><img src="<?php echo get_template_directory_uri()?>/assets/images/img-main-visual-text.png" alt=""/>
-        </div><a class="c-main-visual__btn" href="https://line.me/R/ti/p/@060jzuih?oat__id=931679" target="_blank"><img src="<?php echo get_template_directory_uri()?>/assets/images/img-header-button.png" alt=""/></a>
+        </div>
       </div>
     </div>
+    <div class="c-floating  js-fixedheader"><a class="c-floating__button" href="https://line.me/R/ti/p/@060jzuih?oat__id=931679" target="_blank"><img src="<?php echo get_template_directory_uri()?>/assets/images/img-header-button.png" alt=""/></a>
     <main class="l-main">
       <section class="l-section is-lg">
         <div class="l-container">

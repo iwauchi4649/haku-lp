@@ -1771,6 +1771,7 @@ category: Banners
 }
 @media screen and (min-width: 0em) and (max-width: 46.8125em) {
   .c-block-step__button {
+    text-align: right;
     margin-top: 0.75rem;
   }
 }
@@ -2900,6 +2901,32 @@ category: Components
   max-width: 100% !important;
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+.c-floating {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  bottom: 1.25rem;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  transition: all 0.3s 0s ease;
+}
+@media screen and (min-width: 0em) and (max-width: 46.8125em) {
+  .c-floating.is-fixed {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 0em) and (max-width: 46.8125em) {
+  .c-floating__button {
+    display: block;
+    width: 100%;
+    max-width: 21.6875rem;
+    margin: 0 auto;
+    filter: drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.16));
+  }
 }
 
 .c-form-head__block {
@@ -5507,18 +5534,6 @@ category: Components
 @media screen and (min-width: 0em) and (max-width: 46.8125em) {
   .c-main-visual__text {
     display: none;
-  }
-}
-.c-main-visual__btn {
-  display: none;
-}
-@media screen and (min-width: 0em) and (max-width: 46.8125em) {
-  .c-main-visual__btn {
-    display: block;
-    width: 100%;
-    max-width: 21.6875rem;
-    margin: 1.375rem auto 0;
-    filter: drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.16));
   }
 }
 

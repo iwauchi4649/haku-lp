@@ -67,10 +67,28 @@
     }
   };
 
+  growApp.prototype.floatingButton = function () {
+    let $target = $(".c-floating");
+
+    $(window).scroll(function(){
+      var top = $(".l-offer,.l-footer").offset().top; // ターゲットの位置取得
+      var position = top - $(window).height();  // 発火させたい位置
+
+      if ($(window).width() <= 750) {
+        if($(window).scrollTop() > position){
+          $target.fadeOut("slow");
+        }else{
+          $target.fadeIn("slow");
+        }
+      };
+    })
+  };
+
   $(function () {
     var app = new growApp();
     app.myCode();
     app.enterAnimation();
     app.slidebarButton();
+    app.floatingButton();
   });
 })(jQuery);
