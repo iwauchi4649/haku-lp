@@ -7,32 +7,36 @@ category: Buttons
 .c-button {
   position: relative;
   outline: none;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  max-width: rem-calc(203);
+  max-width: rem-calc(232);
   text-align: center;
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: $color-white;
+  color: $color-primary;
   text-decoration: none;
-  padding: rem-calc(13) rem-calc(24);
-  transition: all .3s;
+  padding: rem-calc(16) rem-calc(20);
+  border: 1px solid $color-primary;
+  border-radius: 26px;
+  @include transition();
+  @include webfont-gothic();
+  @include font-format(13,0.05,19,500);
+
   // *アイコン
   &::after {
-    content: "\f105";
-    display: block;
-    font-family: "FontAwesome";
-    position: absolute;
-    top: 50%;
-    right: rem-calc(16);
-    transform: translateY(-50%);
-    font-weight: 400;
+    content: "east";
+    font-family: "Material Icons Round";
+    line-height: 1;
+    letter-spacing: 0;
+    margin-left: rem-calc(6);
   }
 
   // *hover
   &:hover {
     opacity: 1;
-    background-color: $color-white;
-    color: $color-primary;
+    background-color: $color-primary;
+    color: $color-white;
   }
 
   // カラー設定

@@ -90,8 +90,31 @@ block body
     section.l-section.is-lg
       +c.block-step
         .l-container
-          .l-container
-            +e.inner
-              +e.head.c-heading.is-xlg
-                span STEP
-                b ご利用の流れ
+          +e.inner
+            +e.head.c-heading.is-xlg
+              span STEP
+              b ご利用の流れ
+            +e.blocks
+              +e.block
+                +e.content
+                  +e.icon
+                    +img("img-block-step-icon-01.png")
+                  +e.box
+                    +e.title お試し体験
+                    +e.text ご利用が初めてのお客様は、無料のお試し体験をお申し込みください。お試し体験では、20分程度のオンラインカウンセリングと、実際のホワイトニング体験を行います。
+                +e.button
+                  +a("https://line.me/R/ti/p/@060jzuih?oat__id=931679").c-button お申し込みはこちら
+              +e.block
+                +e.content
+                  +e.icon
+                    +img("img-block-step-icon-02.png")
+                  +e.box
+                    +e.title ジェルの購入
+                    +e.text 医療ジェル・美容ジェルからお好きなジェルを選択し、購入します。医療ジェルをご希望の場合は、LINEにて、オンライン診療の受診が必要です。
+              +e.block
+                +e.content
+                  +e.icon
+                    +img("img-block-step-icon-03.png")
+                  +e.box
+                    +e.title 月額プラン加入
+                    +e.text ジェルがお手元に届きましたら、通い放題やメンテナンスなどの月額プランに加入します。プラン加入中は、24時間いつでもお好きな時間にご予約が可能です。
