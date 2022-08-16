@@ -1,0 +1,28 @@
+.c-floating {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  bottom: rem-calc(20);
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  @include transition();
+
+  &.is-fixed {
+    @include breakpoint(small only) {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__button {
+
+    @include breakpoint(small only) {
+      display: block;
+      width: 100%;
+      max-width: rem-calc(347);
+      margin: 0 auto;
+      filter: drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.16));
+    }
+  }
+}

@@ -187,6 +187,7 @@
     margin-top: rem-calc(16);
 
     @include breakpoint(small only) {
+      text-align: right;
       margin-top: rem-calc(12);
     }
   }
