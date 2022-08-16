@@ -1,0 +1,12 @@
+.c-banner-guarantee {
+  position: relative;
+  z-index: 1;
+
+  &__image {
+    width: 100%;
+    max-width: rem-calc(980);
+    border-radius: rem-calc(21);
+    margin: 0 auto;
+    filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.1));
+  }
+}
