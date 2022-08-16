@@ -92,17 +92,8 @@ category: Buttons
 
   // -> 小
   &.is-sm {
-    max-width: rem-calc(155);
-    padding: rem-calc(10) rem-calc(18);
-    font-size: rem-calc(14);
-    letter-spacing: 0.1em;
-    @include breakpoint(small only) {
-      font-size: rem-calc(14)*0.9;
-    }
-
-    &::after {
-      right: rem-calc(10);
-    }
+    max-width: rem-calc(174);
+    @include font-format(13,0.2,16,400);
   }
 
   // -> 極小
