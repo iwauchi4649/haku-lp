@@ -106,7 +106,7 @@
         </div>
       </div>
     </div>
-    <div class="c-floating  js-fixedheader"><a class="c-floating__button" href="https://line.me/R/ti/p/@060jzuih?oat__id=931679" target="_blank"><img src="<?php echo get_template_directory_uri()?>/assets/images/img-header-button.png" alt=""/></a>
+    <div class="c-floating  js-fixedheader"><a class="c-floating__button" href="https://line.me/R/ti/p/@060jzuih?oat__id=931679" target="_blank"><img src="<?php echo get_template_directory_uri()?>/assets/images/img-header-button.png" alt=""/></a></div>
     <main class="l-main">
       <section class="l-section is-lg">
         <div class="l-container">
