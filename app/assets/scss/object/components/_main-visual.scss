@@ -6,94 +6,129 @@ category: Components
 */
 
 .c-main-visual {
-  width: 100%;
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: rem-calc(30);
 
-  &__image {
-    width: 100%;
-    height: rem-calc(620);
-    top: 0;
-    left: 0;
+  @include breakpoint(small only) {
+    padding-bottom: 0;
+    overflow: visible;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(25%);
+    width: rem-calc(350);
+    height: rem-calc(344);
+    background-image: url(../images/bg-main-visual-plus.png);
     @include bg-option();
+
     @include breakpoint(medium down) {
-      height: 50vw;
-      min-height: 280px;
+      width: rem-calc(250);
+      height: rem-calc(245);
     }
 
-    &::after {
-      @include img-curtain($color-black, .2);
+    @include breakpoint(small only) {
+      content: none;
+    }
+  }
+
+  &__wrapper {
+    z-index: 1;
+    position: relative;
+    height: 60vw;
+
+    @include breakpoint(small only) {
+      height: auto;
+    }
+  }
+
+  &__bg {
+
+    .bg-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: cover;
+
+      @include breakpoint(small only) {
+        position: relative;
+        height: 117.6vw;
+      }
     }
   }
 
   &__inner {
-    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  .l-container {
     width: 100%;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    z-index: 99;
-    text-align: center;
-    padding: 0 rem-calc(16);
-    margin-top: rem-calc(32);
+  }
+
+
+  &__button {
+    z-index: 1;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: rem-calc(280);
+    margin: 0 calc(224/1920*100%) 0 auto;
+    filter: drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.16));
+
+    @include breakpoint(1300 down) {
+      margin-right: calc(150/1920*100%);
+    }
+
+    @include breakpoint(1300 down) {
+      max-width: rem-calc(200);
+    }
+
     @include breakpoint(medium down) {
-      margin-top: rem-calc(8);
+      margin-right: rem-calc(32);
+    }
+
+    @include breakpoint(small only) {
+      max-width: rem-calc(304);
+      margin: rem-calc(-58) auto 0;
     }
   }
 
   &__text {
-    margin-bottom: rem-calc(40);
-    @include breakpoint(small only) {
-      margin-bottom: 4vw;
-    }
-
-    img {
-      width: 100%;
-      max-width: rem-calc(1048)*0.5;
-      height: auto;
-      margin: 0 auto;
-      @include breakpoint(medium down) {
-        width: 90%;
-        max-width: rem-calc(420);
-      }
-    }
-  }
-
-  &__button {
-    .c-button {
-      max-width: rem-calc(252) !important;
-      @include breakpoint(medium down) {
-        padding: rem-calc(12) rem-calc(24);
-        max-width: rem-calc(198) !important;
-      }
-    }
-  }
-
-  // owl.calousel
-  .owl-dots {
     position: absolute;
-    bottom: rem-calc(32);
     left: 0;
+    bottom: rem-calc(-3);
     width: 100%;
-    z-index: 99;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: rem-calc(500);
+
     @include breakpoint(medium down) {
-      bottom: rem-calc(16);
+      max-width: rem-calc(350);
     }
 
-    .owl-dot {
-      margin: 0 rem-calc(6);
-      width: rem-calc(12);
-      height: rem-calc(12);
-      background-color: $color-white;
-      border-radius: 1000px;
-      display: block;
-      outline: none;
+    @include breakpoint(small only) {
+      display: none;
+    }
+  }
 
-      &.active {
-        background-color: $color-primary !important;
-      }
+  &__btn {
+    display: none;
+
+    @include breakpoint(small only) {
+      display: block;
+      width: 100%;
+      max-width: rem-calc(347);
+      margin: rem-calc(22) auto 0;
+      filter: drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.16));
     }
   }
 }

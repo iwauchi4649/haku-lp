@@ -40,6 +40,12 @@ body {
   @media all and (-ms-high-contrast:none){
     font-feature-settings: "liga";
   }
+
+  &.is-slidebar-active {
+    .l-header {
+      background: $color-white;
+    }
+  }
 }
 
 /* HTML5 display definitions

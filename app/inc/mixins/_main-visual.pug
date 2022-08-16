@@ -1,11 +1,17 @@
 //- メインビジュアル
 mixin c_main-visual
   +c.main-visual
-    +e.slider.owl-carousel
-      +bgimg("img-main-visual-01.jpg").c-main-visual__image
-      +bgimg("img-main-visual-01.jpg").c-main-visual__image
-      +bgimg("img-main-visual-01.jpg").c-main-visual__image
-    +e.inner
-      +e.text: +img("img-main-visual-text.png","キャッチコピーが入ります")
+    +e.wrapper
+      .c-main-visual__bg
+        +bgimg("bg-main-visual.png").bg-img.u-hidden-sm
+        +bgimg("bg-main-visual-sp.png").bg-img.u-visible-sm
+      +e.inner
+        +a-ex("https://line.me/R/ti/p/@060jzuih?oat__id=931679").c-main-visual__button
+          +img("img-main-visual-button.png").u-hidden-sm
+          +img("img-main-visual-button-sp.png").u-visible-sm
+      +e.text
+        +img("img-main-visual-text.png")
+      +a-ex("https://line.me/R/ti/p/@060jzuih?oat__id=931679").c-main-visual__btn
+        +img("img-header-button.png")
 
 

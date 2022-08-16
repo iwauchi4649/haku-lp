@@ -1,4 +1,6 @@
 .c-card-after-before {
+  position: relative;
+  z-index: 1;
   overflow: hidden;
 
   &__head {
