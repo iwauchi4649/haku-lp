@@ -166,3 +166,18 @@ block body
               +e.person.
                 H・M さん<br>
                 30代女性 主婦
+    section.l-section.is-xlg.is-bg-faq
+      +c.accordion
+        .l-container
+          +e.index.c-heading.is-xlg
+            span FAQ
+            b よくあるご質問
+          +e.blocks
+            +loop(5)
+              +e.block.js-accordion
+                +e.head(data-accordion-title="accordion-title")
+                  +e.icon Q
+                  +e.title 1回で白くなりますか？
+                +e.content(data-accordion-content="accordion-text")
+                  +e.icon A
+                  +e.text 1回でも白さアップを期待できますが、目標の白さに到達するまでは複数回通う必要のあるケースが多いです。

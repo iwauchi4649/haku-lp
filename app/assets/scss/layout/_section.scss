@@ -176,4 +176,19 @@ $xs: 32;
       }
     }
   }
+
+  &.is-bg-faq{
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/bg-section-faq.jpg);
+      @include bg-option();
+    }
+  }
 }

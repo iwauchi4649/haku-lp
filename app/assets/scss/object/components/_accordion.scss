@@ -6,13 +6,19 @@ category: Components
 */
 
 .c-accordion {
+  position: relative;
+
   &__block {
-    border: 1px solid $border-base-color;
-    padding: 0 rem-calc(32);
-    margin-bottom: rem-calc(16);
+    background: $color-white;
+    border-bottom: 1px solid $color-primary;
+    border-radius: 8px 8px 0 0;
+    padding: rem-calc(28) rem-calc(32) rem-calc(40);
+    margin-bottom: rem-calc(30);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+
     @include breakpoint(small only) {
-      padding: 0 rem-calc(16);
-      margin-bottom: rem-calc(8);
+      padding: rem-calc(20) rem-calc(16) rem-calc(24);
+      margin-bottom: rem-calc(16);
     }
     // オープン時
     &.is-open {
