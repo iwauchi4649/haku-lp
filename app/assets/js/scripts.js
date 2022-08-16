@@ -57,9 +57,20 @@
     }
   };
 
+  growApp.prototype.slidebarButton = function () {
+    if ($("body").hasClass('top')) {
+      var button = $(".c-slidebar-menu a");
+
+      button.on("click", function() {
+        $("body").removeClass("is-slidebar-active");
+      });
+    }
+  };
+
   $(function () {
     var app = new growApp();
     app.myCode();
     app.enterAnimation();
+    app.slidebarButton();
   });
 })(jQuery);
