@@ -2,22 +2,23 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>無人ホワイトニングルーム｜HAKU センター南店</title>
+    <title>無人ホワイトニングルーム｜HAKU</title>
     <meta name="description" content="高品質なホワイトニングを低価格で。セルフで完全無人の「HAKU」だからこそ実現できる業界最安値。物件にかかる費用や人件費を大幅に削減することで、低価格を実現しています。東京TMクリニック提携。医療用ジェル取扱店。">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="ホーム">
+    <meta property="og:title" content="HAKU">
     <meta property="og:description" content="高品質なホワイトニングを低価格で。セルフで完全無人の「HAKU」だからこそ実現できる業界最安値。物件にかかる費用や人件費を大幅に削減することで、低価格を実現しています。東京TMクリニック提携。医療用ジェル取扱店。">
     <meta property="og:url" content="/top/">
-    <meta property="og:site_name" content="無人ホワイトニングルーム｜HAKU センター南店">
+    <meta property="og:site_name" content="HAKU">
     <meta property="og:image" content="<?php echo get_template_directory_uri()?>/assets/images/ogp.png">
     <link href="<?php echo get_template_directory_uri()?>/assets/images/favicon.ico" rel="icon"/>
     <link href="<?php echo get_template_directory_uri()?>/assets/images/favicon.ico" rel="shortcut icon"/>
     <link href="<?php echo get_template_directory_uri()?>/assets/images/web-clipicon.png" rel="apple-touch-icon"/>
     <link href="<?php echo get_template_directory_uri()?>/assets/css/style.css" rel="stylesheet"/>
     <link href="<?php echo get_template_directory_uri()?>/assets/css/app.css" rel="stylesheet"/>
+    <link href="<?php echo get_template_directory_uri()?>/assets/css/add.css" rel="stylesheet"/>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
