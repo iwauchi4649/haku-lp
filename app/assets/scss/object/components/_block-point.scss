@@ -38,10 +38,6 @@
 
     &:not(:first-child) {
       margin-top: rem-calc(64);
-
-      @include breakpoint(small only) {
-        margin-top: rem-calc(32);
-      }
     }
   }
 
