@@ -6,12 +6,13 @@ category: Layout
 */
 
 .l-footer {
+  position: relative;
   background: linear-gradient(to top,#7bb6cc 0%, #e1e5f0 100%);
   color: $color-white;
   padding: rem-calc(80) 0;
 
   @include breakpoint(small only) {
-    padding: rem-calc(40) 0;
+    padding: rem-calc(60) 0;
   }
 
   &__inner {
