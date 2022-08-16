@@ -1,3 +1,203 @@
 .c-block-plan {
+  position: relative;
 
+  &__blocks {
+    position: relative;
+    display: flex;
+
+    @include breakpoint(small only) {
+      display: block;
+    }
+
+    &:not(:first-child) {
+      margin-top: rem-calc(145);
+
+      @include breakpoint(small only) {
+        margin-top: rem-calc(120);
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: rem-calc(-28);
+        left: 50%;
+        transform: translateX(-50%) translateY(-100%);
+        width: rem-calc(92);
+        height: rem-calc(90);
+        background-image: url(../images/img-block-plan-before.png);
+        @include bg-option();
+
+        @include breakpoint(small only) {
+          top: rem-calc(-38);
+          width: rem-calc(61);
+          height: rem-calc(60);
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .c-block-plan__label {
+        background: #63CFDD;
+      }
+
+      .c-block-plan__price {
+        color: #63CFDD;
+      }
+
+      .c-block-plan__block {
+
+        &:nth-child(2) {
+
+          &:after {
+            background: #63CFDD;
+          }
+        }
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background: $color-white;
+    padding: rem-calc(82) rem-calc(62) rem-calc(42);
+    border-radius: 28px 0 0 28px;
+
+    @include breakpoint(medium down) {
+      padding: rem-calc(82) rem-calc(32) rem-calc(42);
+    }
+
+    @include breakpoint(small only) {
+      padding: rem-calc(60) rem-calc(20) rem-calc(30);
+      border-radius: 28px;
+    }
+
+    &:nth-child(2) {
+      margin-left: rem-calc(36);
+      border-radius: 0 28px 28px 0;
+
+      @include breakpoint(small only) {
+        margin-left: 0;
+        margin-top: rem-calc(130);
+        border-radius: 28px;
+      }
+
+      &:after {
+        content: "or";
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        left: 0;
+        transform: translateX(-75%) translateY(-50%);
+        width: rem-calc(80);
+        height: rem-calc(80);
+        color: $color-white;
+        @include webfont-lato();
+        @include font-format(25,0.05,25,300);
+        background: $color-primary;
+        border-radius: 50%;
+
+        @include breakpoint(small only) {
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%) translateY(-175%);
+          width: rem-calc(60);
+          height: rem-calc(60);
+          font-size: rem-calc(18);
+        }
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: rem-calc(333);
+    color: $color-white;
+    text-align: center;
+    @include font-format(22,0.05,32,400);
+    background: $color-primary;
+    padding: rem-calc(12);
+    border-radius: 43px;
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(16);
+      max-width: calc(100% - 32px);
+    }
+
+    span {
+      @include font-format(16,0.05,24,400);
+
+      @include breakpoint(small only) {
+        font-size: rem-calc(14);
+      }
+    }
+  }
+
+  &__price {
+    color: $color-primary;
+    @include font-format(38,0.05,55,400);
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(24);
+    }
+
+    span {
+      @include font-format(28,0.05,40,400);
+
+      @include breakpoint(small only) {
+        font-size: rem-calc(20);
+      }
+    }
+  }
+
+  &__month {
+    margin-top: rem-calc(12);
+    @include webfont-gothic();
+    @include font-format(18,0.05,26,400);
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(14);
+    }
+  }
+
+  &__content {
+    margin-top: rem-calc(40);
+    border-top: 1px solid $border-base-color;
+    padding: rem-calc(30) rem-calc(16) 0;
+
+    @include breakpoint(small only) {
+      margin-top: rem-calc(24);
+      padding: rem-calc(20) rem-calc(8) 0;
+    }
+  }
+
+  &__text {
+    @include webfont-gothic();
+    @include font-format(18,0.05,30,400);
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(14);
+    }
+  }
+
+  &__cution {
+    margin-top: rem-calc(28);
+    @include webfont-gothic();
+    @include font-format(14,0.05,30,400);
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(13);
+      margin-top: rem-calc(20);
+    }
+  }
 }

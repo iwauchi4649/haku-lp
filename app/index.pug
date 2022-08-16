@@ -129,10 +129,49 @@ block body
             +e.iframe
               <iframe width="560" height="315" src="https://www.youtube.com/embed/7EnyZ7iKFDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     section.l-section.is-xlg.is-xlg.is-top
-    section.l-section.is-xlg
+    section.l-section.is-xlg.is-bg-plan
       +c.block-plan
         .l-container
-          p テキスト
+          +e.head.c-heading.is-xlg
+            span PRICE
+            b 料金プラン
+          +e.inner
+            +e.blocks
+              +e.block
+                +e.label 通い放題プラン<span>(月8回*)</span>
+                +e.price 1,100円*<span>(税込)/回</span>
+                +e.month 月額費用：8,800円（税込）
+                +e.content
+                  +e.text 365日いつでも通い放題！圧倒的なコスパで高性能マシン使い放題のプランです。
+                  +e("ul").cution
+                    li *安全面を考慮し、施術の間隔を3日間空けていただいております。
+                    li *月8回通った場合の1回あたりの価格
+              +e.block
+                +e.label メンテナンスプラン<span>(月2回)</span>
+                +e.price 2,140円*<span>(税込)/回</span>
+                +e.month 月額費用：4,280円（税込）
+                +e.content
+                  +e.text 月に2回まで通えるプラン！理想の白さを実現した後に、お色をキープしたい方におすすめです！
+                  +e("ul").cution
+                    li *月2回通った場合の1回あたりの価格
+            +e.blocks
+              +e.block
+                +e.label パーフェクトジェル
+                +e.price 1,550円<span>(税込)/回</span>
+                +e.month 1本あたり：23,300円（税込）
+                +e.content
+                  +e.text HAKUで使用できる高濃度医療ジェルです。<br>ご購入の前に、提携クリニックのオンライン診療を受ける必要があります。
+                  +e("ul").cution
+                    li ※1本のジェルで約15回分使用できます
+              +e.block
+                +e.label ソフトジェル
+                +e.price 300円<span>(税込)/回</span>
+                +e.month 1本あたり：4,400円（税込）
+                +e.content
+                  +e.text HAKUで使用できる美容ジェルです。
+                  +e("ul").cution
+                    li ※1本のジェルで約15回分使用できます。
+
     section.l-section.is-xlg
       .l-container
         +c.banner-guarantee
