@@ -17,7 +17,7 @@ block body
         +c.banner-campaign
           +e.image
             +img("img-banner-campaign.png")
-    section.l-section.is-xlg.is-bg-blue
+    section.l-section.is-xlg.is-bg-primary
       +c.block-point
         +e.float Self Whitening haku
         .l-container
@@ -75,27 +75,23 @@ block body
                 +e.image
                   +img("img-card-after-before-04.jpg")
                 +e.title <span>10</span>回目
+    section.l-section.is-xlg.is-bg-secondary
+      +c.block-service
+        +e.float Self Whitening haku
+        .l-container
+          +e.inner
+            +e.head.c-heading.is-xlg
+              span COMPARISON WITH OTHER SERVICES
+              b 他サービスとの比較
+            +e.lead ホワイトニング選びにおいて最も重要なポイントである「白くなるまでにかかる手間と費用」に着目して比較しています。
+            +e.box
+              +e.image
+                +img("img-block-service.png")
     section.l-section.is-lg
-      .l-container
-        +heading-xlg("私たちについて", "ABOUT").is-bottom.js-modal-image(data-modaal-content-source="assets/images/img-sample.jpg")
-        p.u-text-center テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        +c.card.u-mbs.is-top.is-lg
-          .row.slide
-            .large-4.small-12
-              +e.block
-                +e.image: +img("img-card-01.jpg")
-                +e.content
-                  h3.c-card__title コンセプトタイトル
-                  p.c-card__text ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-            .large-4.small-12
-              +e.block
-                +e.image: +img("img-card-01.jpg")
-                +e.content
-                  h3.c-card__title コンセプトタイトル
-                  p.c-card__text ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-            .large-4.small-12
-              +e.block
-                +e.image: +img("img-card-01.jpg")
-                +e.content
-                  h3.c-card__title コンセプトタイトル
-                  p.c-card__text ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+      +c.block-step
+        .l-container
+          .l-container
+            +e.inner
+              +e.head.c-heading.is-xlg
+                span STEP
+                b ご利用の流れ

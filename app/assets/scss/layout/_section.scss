@@ -84,7 +84,7 @@ $xs: 32;
     background: $color-background;
   }
 
-  &.is-bg-blue{
+  &.is-bg-primary{
     position: relative;
     margin-bottom: rem-calc(140);
 
@@ -126,6 +126,29 @@ $xs: 32;
         width: rem-calc(200);
         height: rem-calc(181);
         border-radius: 0 rem-calc(200) 0 0;
+      }
+    }
+  }
+
+  &.is-bg-secondary{
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: calc(1844/1920*100%);
+      height: 100%;
+      border-radius: 0 rem-calc(460) 0 0;
+      background: rgba($color-secondary,0.1);
+
+      @include breakpoint(1400 down) {
+        width: calc(100% - 16px);
+      }
+
+      @include breakpoint(small only) {
+        width: calc(100% - 32px);
       }
     }
   }

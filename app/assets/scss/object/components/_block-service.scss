@@ -1,0 +1,70 @@
+.c-block-service {
+  overflow: hidden;
+
+  &__float {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: calc(40/1400*100%);
+    color: $color-white;
+    @include webfont-apple();
+    @include font-format(130,0,130,400);
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+
+    @include breakpoint(medium down) {
+      left: rem-calc(48);
+      font-size: rem-calc(100);
+    }
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(80);
+    }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__head {
+
+    &.c-heading.is-xlg {
+      margin-bottom: rem-calc(50);
+
+      @include breakpoint(small only) {
+        margin-bottom: rem-calc(32);
+      }
+    }
+  }
+
+  &__lead {
+    text-align: center;
+    margin-bottom: rem-calc(48);
+
+    @include breakpoint(small only) {
+      margin-bottom: rem-calc(24);
+    }
+  }
+
+  &__box {
+    background: $color-white;
+    padding: rem-calc(40) rem-calc(80);
+    border-radius: 23px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+
+    @include breakpoint(medium down) {
+      padding: rem-calc(40) rem-calc(60);
+    }
+
+    @include breakpoint(small only) {
+      padding: rem-calc(20);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: rem-calc(886);
+    margin: 0 auto;
+  }
+}
