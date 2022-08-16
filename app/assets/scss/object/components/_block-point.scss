@@ -108,4 +108,25 @@
       font-weight: 700;
     }
   }
+
+  &__iframe {
+    position: relative;
+    width: 100%;
+    max-width: rem-calc(944);
+    padding-top: calc(534/1140*100%);
+    margin: 0 auto;
+
+    @include breakpoint(medium down) {
+      padding-top: calc(534/944*100%);
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+      border: none !important;
+    }
+  }
 }
