@@ -129,6 +129,14 @@ category: Heading
   color: $color-primary;
 }
 
+.c-heading.is-color-white {
+  color: $color-white;
+
+  span,b {
+    color: $color-white;
+  }
+}
+
 // マージン調整
 .c-heading.is-top {
   margin-bottom: 0 !important;
@@ -140,6 +148,14 @@ category: Heading
 
 .c-heading.is-center{
   text-align: center;
+}
+
+.c-heading.is-left{
+  text-align: left;
+
+  span {
+    justify-content: flex-start;
+  }
 }
 
 .c-heading.is-mg-none {

@@ -152,4 +152,28 @@ $xs: 32;
       }
     }
   }
+
+  &.is-bg-voice{
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: calc(1790/1920*100%);
+      height: calc(688/1075*100%);
+      border-radius: 0 rem-calc(460) 0 0;
+      background-image: url(../images/bg-section-voice.png);
+      @include bg-option();
+
+      @include breakpoint(1400 down) {
+        width: calc(100% - 16px);
+      }
+
+      @include breakpoint(small only) {
+        width: calc(100% - 32px);
+      }
+    }
+  }
 }
